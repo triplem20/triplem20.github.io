@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOERS Digital — We Build. We Deliver.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="doers-digital.css">
+
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div id="progress"></div>
+
+<!-- CURSORS -->
+<div id="cur"></div>
+<div id="curR"></div>
+
+<!-- ━━━━ NAV ━━━━ -->
+<nav id="nav">
+<div class="nlogo">
+  <img src="doersLogo.png" alt="DOERS Digital">DO<em>E</em>RS<span>.</span>
+</div>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#packages">Packages</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#markets">Markets</a></li>
+  </ul>
+  <button class="ncta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start a Project</button>
+</nav>
+
+<!-- ━━━━ HERO ━━━━ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="glow-orb" style="width:500px;height:500px;background:rgba(198,255,0,.055);top:-80px;right:25%;"></div>
+  <div class="glow-orb" style="width:320px;height:320px;background:rgba(0,255,209,.04);bottom:50px;right:10%;"></div>
+
+  <div class="hero-l">
+    <div class="h-eye">// Sudan · Egypt · Gulf Region</div>
+    <h1 class="h-title">
+      <span class="hl"><span class="hl-i">WE <span class="acc">BUILD.</span></span></span>
+      <span class="hl"><span class="hl-i">WE DELIVER.</span></span>
+    </h1>
+    <p class="h-desc">DOERS Digital Solutions is a <strong>development-first digital agency</strong> that builds real systems — websites, web apps, business automation, and standout professional profiles — for businesses ready to grow.</p>
+    <div class="h-btns">
+      <a href="#services" class="btn-p">Explore Services →</a>
+      <a href="#packages" class="btn-s">View Packages</a>
+    </div>
+    <div class="h-stats">
+      <div class="stat"><div class="n" data-count="3">0</div><div class="l">Markets</div></div>
+      <div class="stat"><div class="n" data-count="6">0</div><div class="l">Services</div></div>
+      <div class="stat"><div class="n" data-count="100">0</div><div class="l">% Execution</div></div>
+    </div>
+  </div>
+
+  <!-- FLOATING PHONES -->
+  <div class="hero-r">
+    <div class="phone-wrap">
+
+      <!-- Phone 2: Dashboard (left) -->
+      <div class="phone ph2">
+        <div class="phone-screen">
+          <div class="screen-shine"></div>
+          <div class="scanlines"></div>
+          <div class="sc-dash">
+            <div class="dh"><span class="dt">DASHBOARD</span><div class="dav"></div></div>
+            <div class="dstats">
+              <div class="ds"><div class="dsn">142</div><div class="dsl">Users</div></div>
+              <div class="ds"><div class="dsn">$8.2k</div><div class="dsl">Rev</div></div>
+              <div class="ds"><div class="dsn">98%</div><div class="dsl">Up</div></div>
+            </div>
+            <div class="chart-box">
+              <div class="ch-lbl">// REVENUE</div>
+              <div class="bars">
+                <div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div>
+                <div class="bar b4"></div><div class="bar b5"></div><div class="bar b6"></div><div class="bar b7"></div>
+              </div>
+            </div>
+            <div class="drow">
+              <div class="dpill"><span>API CALLS</span></div>
+              <div class="dpill live"><span>● LIVE</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone 1: Website (center) -->
+      <div class="phone ph1">
+        <div class="phone-screen">
+          <div class="screen-shine"></div>
+          <div class="scanlines"></div>
+          <div class="sc-web">
+            <div class="topbar"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><div class="urlbar">doersdigital.com</div></div>
+            <div class="hero-blk">
+              <div class="mini-h">WE BUILD</div>
+              <div class="ml"></div><div class="ml s"></div><div class="ml m"></div>
+              <div class="mini-btn">Get Started →</div>
+            </div>
+            <div class="scard-row">
+              <div class="scard"><div class="scard-ico">🌐</div><div class="scd"></div><div class="scd h"></div></div>
+              <div class="scard"><div class="scard-ico">⚙️</div><div class="scd"></div><div class="scd h"></div></div>
+              <div class="scard"><div class="scard-ico">🤖</div><div class="scd"></div><div class="scd h"></div></div>
+              <div class="scard"><div class="scard-ico">🎨</div><div class="scd"></div><div class="scd h"></div></div>
+            </div>
+            <div class="code-bar">
+              <div class="cb-c">// initializing...</div>
+              <div class="cb-l"><span style="color:#82AAFF">const </span><span style="color:#C3E88D">site</span><span style="color:#FFF"> = </span><span style="color:#FFCB6B">build</span><span style="color:#FFF">("doers")</span><span class="tcursor"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone 3: Automation (right) -->
+      <div class="phone ph3">
+        <div class="phone-screen">
+          <div class="screen-shine"></div>
+          <div class="scanlines"></div>
+          <div class="sc-auto">
+            <div class="at">// AUTOMATION</div>
+            <div class="nodes">
+              <div class="node act"><span class="ni">📋</span>CRM Input</div>
+              <div class="conn"></div><div class="tnode"></div><div class="conn" style="background:rgba(198,255,0,.25)"></div>
+              <div class="node act"><span class="ni">⚙️</span>Process</div>
+              <div class="conn"></div><div class="tnode" style="animation-delay:.7s"></div><div class="conn" style="background:rgba(198,255,0,.18)"></div>
+              <div class="node"><span class="ni">📧</span>Email Send</div>
+              <div class="conn" style="background:rgba(198,255,0,.1)"></div><div class="tnode" style="animation-delay:1.4s"></div><div class="conn" style="background:rgba(198,255,0,.08)"></div>
+              <div class="node"><span class="ni">📊</span>Report</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━ MARQUEE ━━━━ -->
+<div class="marq">
+  <div class="mtrack" id="mtrack">
+    <span class="mitem">Website Development <em>◆</em></span>
+    <span class="mitem">Web Applications <em>◆</em></span>
+    <span class="mitem">Business Automation <em>◆</em></span>
+    <span class="mitem">UI/UX Implementation <em>◆</em></span>
+    <span class="mitem">CV Creation <em>◆</em></span>
+    <span class="mitem">Portfolio Websites <em>◆</em></span>
+    <span class="mitem">Website Development <em>◆</em></span>
+    <span class="mitem">Web Applications <em>◆</em></span>
+    <span class="mitem">Business Automation <em>◆</em></span>
+    <span class="mitem">UI/UX Implementation <em>◆</em></span>
+    <span class="mitem">CV Creation <em>◆</em></span>
+    <span class="mitem">Portfolio Websites <em>◆</em></span>
+  </div>
+</div>
+
+<!-- ━━━━ ABOUT ━━━━ -->
+<section id="about">
+  <div class="about-g">
+    <div class="about-l reveal">
+      <div class="stag">01 // Who We Are</div>
+      <h2 class="stitle">NOT TALKERS.<br><em>DOERS.</em></h2>
+      <p>We are a development-driven agency built around one principle: execute fast, deliver quality, and build for results — not presentations.</p>
+      <div class="feat-g">
+        <div class="feat"><div class="fi">⚡</div><div class="fn">Execution First</div><div class="fd">Planning matters, but shipping is everything. We move fast without cutting corners.</div></div>
+        <div class="feat"><div class="fi">🎯</div><div class="fn">Results-Driven</div><div class="fd">A website that converts beats a pretty website every time. We measure by outcomes.</div></div>
+        <div class="feat"><div class="fi">🤝</div><div class="fn">Trust Through Quality</div><div class="fd">Every file we deliver reflects our standard. We never ship something we're not proud of.</div></div>
+        <div class="feat"><div class="fi">🏗</div><div class="fn">Full-Stack In-House</div><div class="fd">Frontend, backend, systems — one team, one roof. No hand-offs, no excuses.</div></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:.2s">
+      <div class="codeblk">
+        <div class="cb-hdr"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><span class="cb-t">// company-config.js</span></div>
+        <div class="cb-bdy">
+<div><span class="cc">// Company Configuration</span></div>
+<br>
+<div><span class="ck">const</span> <span class="ca">doers</span> = {</div>
+<div style="padding-left:20px"><span class="ck">type:</span> <span class="cs">"Digital Agency"</span>,</div>
+<div style="padding-left:20px"><span class="ck">mode:</span> <span class="cs">"Execution-First"</span>,</div>
+<div style="padding-left:20px"><span class="ck">team:</span> <span class="cs">"Lean &amp; Skilled"</span>,</div>
+<div style="padding-left:20px"><span class="ck">markets:</span> [</div>
+<div style="padding-left:40px"><span class="cs">"Sudan"</span>, <span class="cs">"Egypt"</span>, <span class="cs">"Gulf"</span></div>
+<div style="padding-left:20px">],</div>
+<div style="padding-left:20px"><span class="ck">philosophy:</span> <span class="cs">"Ship. Deliver. Grow."</span>,</div>
+<div style="padding-left:20px"><span class="ck">promise:</span> <span class="cf">() =&gt;</span> {</div>
+<div style="padding-left:40px"><span class="cc">// Results guaranteed.</span></div>
+<div style="padding-left:40px"><span class="ck">return</span> <span class="ca">qualityOutput</span>;</div>
+<div style="padding-left:20px">}</div>
+<div>};</div>
+        </div>
+      </div>
+      <div class="journey">
+        <div class="j-tag">// Client Journey</div>
+        <div class="jpath">
+          <span class="jp">CV Starter</span><span class="jarr">→</span>
+          <span class="jp">CV Pro</span><span class="jarr">→</span>
+          <span class="jp">Portfolio</span><span class="jarr">→</span>
+          <span class="jp">Business Web</span><span class="jarr">→</span>
+          <span class="jp hi">Web App</span><span class="jarr">→</span>
+          <span class="jp hi">Retainer ♾️</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━ SERVICES ━━━━ -->
+<section id="services" style="padding-top:0">
+  <div class="svc-hdr reveal">
+    <div>
+      <div class="stag">02 // What We Build</div>
+      <h2 class="stitle">OUR <em>SERVICES</em></h2>
+    </div>
+    <p>Two tiers: core development services that power our business, and entry services that start the relationship.</p>
+  </div>
+
+  <div class="svc-grid">
+
+    <!-- 01 Website Dev -->
+    <div class="svc reveal">
+      <div class="sv-n">01 //</div>
+      <div class="sv-ico">🌐</div>
+      <div class="sv-name">Website Development</div>
+      <div class="sv-desc">Business websites, landing pages, and portfolio sites. Clean code, responsive design, fast performance. Built to convert visitors into clients.</div>
+      <a href="#packages" class="sv-link">Get Started</a>
+      <div class="svc-pop">
+        <div class="sp-sc sp-web">
+          <div class="sp-bar"><div class="sd" style="background:#FF5F57"></div><div class="sd" style="background:#FFBD2E"></div><div class="sd" style="background:#28CA41"></div><div class="sp-ln"></div></div>
+          <div class="sp-blk ac"></div>
+          <div class="sp-row"><div class="sp-blk"></div><div class="sp-blk"></div></div>
+          <div class="sp-c"></div>
+          <div class="sp-blk"></div>
+          <div class="sp-row"><div class="sp-blk" style="height:12px"></div><div class="sp-blk" style="height:12px"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 Web Apps -->
+    <div class="svc reveal" style="transition-delay:.08s">
+      <div class="sv-n">02 //</div>
+      <div class="sv-ico">⚙️</div>
+      <div class="sv-name">Web Applications</div>
+      <div class="sv-desc">Custom dashboards, booking systems, client portals, and internal tools built to your exact specifications. Scalable and production-ready.</div>
+      <a href="#packages" class="sv-link">Get Started</a>
+      <div class="svc-pop">
+        <div class="sp-sc sp-dash">
+          <div class="sp-dh"><span class="sp-dt">DASHBOARD</span><div class="sp-av"></div></div>
+          <div class="sp-sr">
+            <div class="sp-s"><div class="sp-sn">142</div><div class="sp-sl">Users</div></div>
+            <div class="sp-s"><div class="sp-sn">$8k</div><div class="sp-sl">Rev</div></div>
+            <div class="sp-s"><div class="sp-sn">98%</div><div class="sp-sl">Up</div></div>
+          </div>
+          <div class="sp-ch"><div class="sp-bs">
+            <div class="sp-b" style="height:55%"></div><div class="sp-b" style="height:80%"></div>
+            <div class="sp-b" style="height:40%"></div><div class="sp-b" style="height:95%"></div>
+            <div class="sp-b" style="height:70%"></div><div class="sp-b" style="height:100%"></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 Automation -->
+    <div class="svc reveal" style="transition-delay:.16s">
+      <div class="sv-n">03 //</div>
+      <div class="sv-ico">🤖</div>
+      <div class="sv-name">Business Automation</div>
+      <div class="sv-desc">Automated workflows, CRM integrations, and backend logic that eliminate manual processes. Let your systems work while you grow.</div>
+      <a href="#packages" class="sv-link">Get Started</a>
+      <div class="svc-pop">
+        <div class="sp-sc sp-auto">
+          <div class="sp-at">// WORKFLOW</div>
+          <div class="sp-nodes">
+            <div class="sp-node a">📋 CRM</div>
+            <div class="sp-cn"></div><div class="sp-p"></div><div class="sp-cn" style="background:rgba(198,255,0,.35)"></div>
+            <div class="sp-node a">⚙️ Process</div>
+            <div class="sp-cn"></div><div class="sp-p" style="animation-delay:.8s"></div><div class="sp-cn" style="background:rgba(198,255,0,.2)"></div>
+            <div class="sp-node">📧 Email</div>
+            <div class="sp-cn" style="background:rgba(198,255,0,.1)"></div>
+            <div class="sp-node">📊 Report</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 UI/UX -->
+    <div class="svc reveal" style="transition-delay:.24s">
+      <div class="sv-n">04 //</div>
+      <div class="sv-ico">🎨</div>
+      <div class="sv-name">UI/UX Implementation</div>
+      <div class="sv-desc">Front-end development from approved designs. Pixel-perfect, interactive, and production-ready. We make great designs actually work.</div>
+      <a href="#packages" class="sv-link">Get Started</a>
+      <div class="svc-pop">
+        <div class="sp-sc sp-ux">
+          <div class="sp-tb">
+            <div class="sp-tl">✏️</div><div class="sp-tl">▭</div><div class="sp-tl">○</div><div class="sp-tl">↗</div>
+          </div>
+          <div class="sp-cv">
+            <div class="sp-sh sp-sh1"></div>
+            <div class="sp-sh sp-sh2"></div>
+            <div class="sp-sh sp-sh3"></div>
+          </div>
+          <div class="sp-pal">
+            <div class="sp-col" style="background:#C6FF00"></div>
+            <div class="sp-col" style="background:#FF6B6B"></div>
+            <div class="sp-col" style="background:#4ECDC4"></div>
+            <div class="sp-col" style="background:#FFE66D"></div>
+            <div class="sp-col" style="background:#A18CD1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 CV -->
+    <div class="svc reveal" style="transition-delay:.32s">
+      <div class="sv-n">05 //</div>
+      <div class="sv-ico">📄</div>
+      <div class="sv-name">CV Creation</div>
+      <div class="sv-desc">Professional CV writing and design — basic and premium tiers. ATS-friendly, Gulf-ready, designed to get you hired faster. Fast turnaround.</div>
+      <a href="#packages" class="sv-link">Get Started</a>
+      <div class="svc-pop">
+        <div class="sp-sc sp-cv-doc" style="padding:0">
+          <div class="sp-cvh">
+            <div class="sp-cva"></div>
+            <div><div class="sp-cvn">Ahmed M.</div><div style="font-size:5.5px;color:#888">Software Engineer</div></div>
+          </div>
+          <div class="sp-cvb">
+            <div class="sp-cvl ac"></div>
+            <div style="height:5px"></div>
+            <div class="sp-cvl"></div><div class="sp-cvl h"></div><div class="sp-cvl"></div><div class="sp-cvl s"></div>
+            <div class="sp-skills">
+              <div style="font-size:5.5px;color:#333;font-weight:700;margin-bottom:2px">SKILLS</div>
+              <div class="sp-sk" style="width:80%"></div>
+              <div class="sp-sk" style="width:65%"></div>
+              <div class="sp-sk" style="width:90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 Portfolio -->
+    <div class="svc reveal" style="transition-delay:.4s">
+      <div class="sv-n">06 //</div>
+      <div class="sv-ico">💼</div>
+      <div class="sv-name">Portfolio Websites</div>
+      <div class="sv-desc">Clean, personal websites for freelancers and professionals. The natural bridge between a great CV and a full business website presence.</div>
+      <a href="#packages" class="sv-link">Get Started</a>
+      <div class="svc-pop">
+        <div class="sp-sc sp-port">
+          <div class="sp-ph">MY WORK</div>
+          <div class="sp-hb">🖼️ Hero Project</div>
+          <div class="sp-gd">
+            <div class="sp-gi">📱</div><div class="sp-gi">🌐</div>
+            <div class="sp-gi">🎨</div><div class="sp-gi">⚙️</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ━━━━ PROCESS ━━━━ -->
+<section id="process" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="reveal">
+    <div class="stag">04 // How We Work</div>
+    <h2 class="stitle">THE <em>PROCESS</em></h2>
+    <p style="color:var(--muted);font-size:16px;margin-top:12px;max-width:500px;line-height:1.7">No chaos. No guesswork. Every project follows a proven system from first contact to final delivery.</p>
+  </div>
+  <div class="proc-g">
+    <div class="proc-step reveal"><div class="pcirc">01</div><div class="pname">Discovery</div><div class="pdesc">DM, referral, or inbound inquiry. Scope, budget &amp; timeline discussion.</div></div>
+    <div class="proc-step reveal" style="transition-delay:.1s"><div class="pcirc">02</div><div class="pname">Proposal</div><div class="pdesc">Clear proposal sent. Package, price, and timeline defined upfront.</div></div>
+    <div class="proc-step reveal" style="transition-delay:.2s"><div class="pcirc">03</div><div class="pname">Kickoff</div><div class="pdesc">Contract signed. 50% deposit secures your project slot immediately.</div></div>
+    <div class="proc-step reveal" style="transition-delay:.3s"><div class="pcirc">04</div><div class="pname">Build</div><div class="pdesc">Dev team executes. Status updates every 3 days. No surprises.</div></div>
+    <div class="proc-step reveal" style="transition-delay:.4s"><div class="pcirc">05</div><div class="pname">Deliver</div><div class="pdesc">Internal QA, client review, final delivery on balance payment.</div></div>
+  </div>
+</section>
+
+<!-- ━━━━ MARKETS ━━━━ -->
+<section id="markets">
+  <div class="reveal">
+    <div class="stag">05 // Where We Operate</div>
+    <h2 class="stitle">OUR <em>MARKETS</em></h2>
+    <p style="color:var(--muted);font-size:16px;margin-top:12px;line-height:1.7">Three strategic markets, each with distinct advantages. We know the culture, the expectations, and the opportunity in each.</p>
+  </div>
+  <div class="mkt-g">
+    <div class="mkt reveal">
+      <span class="mf">🇸🇩</span>
+      <div class="mstatus">● Home Base</div>
+      <div class="mname">SUDAN</div>
+      <div class="mdesc">Home base — high-trust network, deep roots. Where we started and where our strongest relationships live.</div>
+    </div>
+    <div class="mkt reveal" style="transition-delay:.1s">
+      <span class="mf">🇪🇬</span>
+      <div class="mstatus">● Active</div>
+      <div class="mname">EGYPT</div>
+      <div class="mdesc">Large SME market — tech-hungry, fast-growing. Cairo's startup ecosystem is booming and we're part of it.</div>
+    </div>
+    <div class="mkt reveal" style="transition-delay:.2s">
+      <span class="mf">🇦🇪</span>
+      <div class="mstatus">◎ Expanding</div>
+      <div class="mname">GULF</div>
+      <div class="mdesc">High budgets, high standards, premium positioning. The Gulf is where ambitious digital work gets rewarded.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━ CTA ━━━━ -->
+<section class="cta-s" id="contact">
+  <div class="reveal">
+    <div class="stag" style="justify-content:center">// Ready?</div>
+    <h2 class="stitle">LET'S <em>BUILD.</em></h2>
+    <p class="cta-p">Whether you need a CV, a website, or a full digital system — we execute, we deliver, and we don't waste your time.</p>
+    <div class="cta-btns">
+      <a href="mailto:doersdigital.solutions@gmail.com" class="btn-p">Start a Project →</a>
+      <a href="https://wa.me/201000000000" class="btn-s">WhatsApp Us</a>
+    </div>
+    <div class="cta-contacts">
+      <div class="cct"><div class="cct-l">Email</div><div class="cct-v">doersdigital.solutions@gmail.com</div></div>
+      <div class="cct"><div class="cct-l">WhatsApp</div><div class="cct-v">+20 100 000 0000</div></div>
+      <div class="cct"><div class="cct-l">Instagram</div><div class="cct-v">@doers.digital</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ━━━━ FOOTER ━━━━ -->
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="flogo">DOERS<em>.</em></div>
+      <div class="ftag">"Digital Solutions That Get Results." — We build real systems for real businesses. No fluff, no empty promises.</div>
+      <div class="ft-sub">// Sudan · Egypt · Gulf</div>
+    </div>
+    <div>
+      <div class="fcol-t">Services</div>
+      <ul class="flinks">
+        <li><a href="#services">Website Development</a></li>
+        <li><a href="#services">Web Applications</a></li>
+        <li><a href="#services">Business Automation</a></li>
+        <li><a href="#services">UI/UX Implementation</a></li>
+        <li><a href="#services">CV Creation</a></li>
+        <li><a href="#services">Portfolio Sites</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fcol-t">Company</div>
+      <ul class="flinks">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#markets">Markets</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fcol-t">Contact</div>
+      <ul class="flinks">
+        <li><a href="mailto:doersdigital.solutions@gmail.com">doersdigital.solutions@gmail.com</a></li>
+        <li><a href="https://wa.me/+20 1505945566">+20 150 594 5566</a></li>
+        <li><a href="#">@doers.digital</a></li>
+        <li><a href="#">@DoersDigital</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <div class="fcp">© 2025 DOERS Digital Solutions. All rights reserved.</div>
+    <div class="fsl">WE BUILD. WE DELIVER. WE GROW.</div>
+  </div>
+</footer>
+<script src="doers-digital.js"></script>
+
+</body>
+</html>
