@@ -1,4 +1,3 @@
-
 // ── SCROLL PROGRESS ──
 const prog = document.getElementById('progress');
 window.addEventListener('scroll', () => {
@@ -85,3 +84,88 @@ document.querySelector('.hero-r')?.addEventListener('mouseleave', () => {
   if(ph1) ph1.style.transform = '';
   setTimeout(() => { if(ph1) ph1.style.transform = ''; }, 100);
 });
+
+// ── BILINGUAL ENGINE ──
+let currentLang = 'en';
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ar' : 'en';
+  applyLang(currentLang);
+}
+
+function applyLang(lang) {
+  const isAr = lang === 'ar';
+
+  // Set HTML dir and lang
+  document.documentElement.lang = lang;
+  document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+
+  // Font swap
+  document.body.style.fontFamily = isAr
+    ? "'Cairo', 'Tajawal', sans-serif"
+    : "var(--font-b)";
+
+  // Toggle button highlight
+  const toggle = document.getElementById('langToggle');
+  toggle.classList.toggle('ar-active', isAr);
+
+  // Translate all elements with data-en / data-ar
+  document.querySelectorAll('[data-en][data-ar]').forEach(el => {
+    const text = isAr ? el.dataset.ar : el.dataset.en;
+    if (text !== undefined) {
+      el.innerHTML = text;
+    }
+  });
+
+  // Hero title special treatment
+  const heroTitle = document.querySelector('.h-title');
+  if (heroTitle) {
+    if (isAr) {
+      heroTitle.innerHTML = `
+        <span class="hl"><span class="hl-i">نحن <span class="acc">نبني.</span></span></span>
+        <span class="hl"><span class="hl-i">نحن نُنجز.</span></span>
+      `;
+    } else {
+      heroTitle.innerHTML = `
+        <span class="hl"><span class="hl-i">WE <span class="acc">BUILD.</span></span></span>
+        <span class="hl"><span class="hl-i">WE DELIVER.</span></span>
+      `;
+    }
+  }
+
+  // Marquee items with diamond separator
+  document.querySelectorAll('.mitem').forEach(el => {
+    const text = isAr ? el.dataset.ar : el.dataset.en;
+    if (text) {
+      el.innerHTML = text.replace('◆', '<em>◆</em>');
+    }
+  });
+
+  // Page title
+  document.title = isAr
+    ? 'DOERS Digital — نبني. نُنجز.'
+    : 'DOERS Digital — We Build. We Deliver.';
+
+  // RTL-specific layout adjustments
+  document.querySelectorAll('.h-eye').forEach(el => {
+    el.style.flexDirection = isAr ? 'row-reverse' : 'row';
+  });
+  document.querySelectorAll('.stag').forEach(el => {
+    el.style.flexDirection = isAr ? 'row-reverse' : 'row';
+  });
+  document.querySelectorAll('.j-tag').forEach(el => {
+    el.style.flexDirection = isAr ? 'row-reverse' : 'row';
+  });
+
+  // Store preference
+  localStorage.setItem('doers-lang', lang);
+}
+
+// Load saved preference
+(function init() {
+  const saved = localStorage.getItem('doers-lang');
+  if (saved && saved !== 'en') {
+    currentLang = saved;
+    applyLang(saved);
+  }
+})();
