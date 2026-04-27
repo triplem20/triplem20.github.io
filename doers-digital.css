@@ -369,3 +369,182 @@ footer{padding:60px 64px 38px}
   .feat-g{grid-template-columns:1fr}
   .h-stats{gap:28px}
 }
+/* ── LANGUAGE TOGGLE ── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border2);
+  padding: 7px 14px;
+  cursor: pointer;
+  font-family: var(--font-m);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  transition: all .25s;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.lang-toggle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-dim);
+  opacity: 0;
+  transition: opacity .25s;
+}
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+.lang-toggle:hover::before { opacity: 1; }
+
+.lt-ar {
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  transition: color .25s;
+}
+.lt-en {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color .25s;
+}
+.lt-divider {
+  color: var(--border2);
+  font-size: 10px;
+}
+
+/* Active state highlights current lang */
+.lang-toggle.ar-active .lt-ar { color: var(--accent); }
+.lang-toggle:not(.ar-active) .lt-en { color: var(--accent); }
+
+/* ── RTL GLOBAL SUPPORT ── */
+[dir="rtl"] .nlinks {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] nav {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .h-btns {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .h-stats {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .about-g {
+  direction: rtl;
+}
+[dir="rtl"] .feat-g {
+  direction: rtl;
+}
+[dir="rtl"] .codeblk {
+  direction: ltr; /* code stays LTR */
+}
+[dir="rtl"] .journey {
+  direction: rtl;
+}
+[dir="rtl"] .jpath {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+[dir="rtl"] .jarr {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .svc-hdr {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .svc-hdr p {
+  text-align: left;
+}
+[dir="rtl"] .sv-link::after {
+  content: '←';
+}
+[dir="rtl"] .pkg-feats li {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .proc-g::before {
+  left: calc(10%);
+  right: calc(10%);
+}
+[dir="rtl"] .ft-top {
+  direction: rtl;
+}
+[dir="rtl"] .ft-bot {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .cta-btns {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .cta-contacts {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .mkt-g {
+  direction: rtl;
+}
+[dir="rtl"] .drow {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] section {
+  text-align: right;
+}
+[dir="rtl"] .stitle {
+  text-align: right;
+}
+[dir="rtl"] .cta-s {
+  text-align: center;
+}
+[dir="rtl"] .cta-s .stitle {
+  text-align: center;
+}
+[dir="rtl"] .h-desc {
+  text-align: right;
+}
+
+/* Arabic font override for body text in RTL mode */
+[dir="rtl"] body,
+[dir="rtl"] p,
+[dir="rtl"] .sv-desc,
+[dir="rtl"] .fd,
+[dir="rtl"] .pdesc,
+[dir="rtl"] .mdesc,
+[dir="rtl"] .cta-p,
+[dir="rtl"] .ftag,
+[dir="rtl"] .pkg-target,
+[dir="rtl"] .about-l p {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+  line-height: 1.9;
+}
+
+/* Arabic display font for headings */
+[dir="rtl"] .stitle,
+[dir="rtl"] .h-title,
+[dir="rtl"] .mname,
+[dir="rtl"] .pkg-name,
+[dir="rtl"] .flogo {
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+[dir="rtl"] .fn {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+
+/* Stat labels in Arabic */
+[dir="rtl"] .stat .l {
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 0;
+}
